@@ -25,6 +25,7 @@
 		B3525D941757E2AE008AE816 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3525D691757E2AE008AE816 /* Foundation.framework */; };
 		B3525D9C1757E2AE008AE816 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B3525D9A1757E2AE008AE816 /* InfoPlist.strings */; };
 		B3525D9F1757E2AE008AE816 /* TTestAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3525D9E1757E2AE008AE816 /* TTestAppTests.m */; };
+		B3525DAA1757EB14008AE816 /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3525DA91757EB14008AE816 /* MyLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		B3525D9B1757E2AE008AE816 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B3525D9D1757E2AE008AE816 /* TTestAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTestAppTests.h; sourceTree = "<group>"; };
 		B3525D9E1757E2AE008AE816 /* TTestAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTestAppTests.m; sourceTree = "<group>"; };
+		B3525DA81757EB14008AE816 /* MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
+		B3525DA91757EB14008AE816 /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +134,8 @@
 				B3525D881757E2AE008AE816 /* FlipsideViewController.h */,
 				B3525D891757E2AE008AE816 /* FlipsideViewController.m */,
 				B3525D6E1757E2AE008AE816 /* Supporting Files */,
+				B3525DA81757EB14008AE816 /* MyLabel.h */,
+				B3525DA91757EB14008AE816 /* MyLabel.m */,
 			);
 			path = TTestApp;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				B3525D781757E2AE008AE816 /* AppDelegate.m in Sources */,
 				B3525D871757E2AE008AE816 /* MainViewController.m in Sources */,
 				B3525D8A1757E2AE008AE816 /* FlipsideViewController.m in Sources */,
+				B3525DAA1757EB14008AE816 /* MyLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +479,7 @@
 				B3525DA41757E2AE008AE816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3525DA51757E2AE008AE816 /* Build configuration list for PBXNativeTarget "TTestAppTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +488,7 @@
 				B3525DA71757E2AE008AE816 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
