@@ -12,4 +12,9 @@
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
+@property (strong, nonatomic) NSString* mainViewControllerString;
+
+@property (strong, nonatomic) IBOutlet UILabel *labelOne;
+@property (strong, nonatomic) IBOutlet UILabel *labelTwo;
+
 @end

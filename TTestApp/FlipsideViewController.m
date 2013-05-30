@@ -23,7 +23,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    self.labelThree.textColor = [UIColor greenColor];
+    self.labelThree.text = self.flipsideViewControllerString;
 }
 
 - (void)didReceiveMemoryWarning

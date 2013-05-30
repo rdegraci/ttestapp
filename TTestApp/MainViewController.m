@@ -7,6 +7,8 @@
 //
 
 #import "MainViewController.h"
+#import "AppDelegate.h"
+#import "FlipsideViewController.h"
 
 @interface MainViewController ()
 
@@ -17,7 +19,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
+    self.mainViewControllerString = @"This is the main View Controller String";
+    
+    AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
+    [self.labelOne setTextColor:[UIColor redColor]];
+    [self.labelOne setText:appDelegate.appDelegateString];
+    
+    self.labelTwo.textColor = [UIColor yellowColor];
+    self.labelTwo.text = self.mainViewControllerString;
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,6 +64,9 @@
             self.flipsidePopoverController = popoverController;
             popoverController.delegate = self;
         }
+        
+        FlipsideViewController* flipsideViewController = (FlipsideViewController*)segue.destinationViewController;
+        flipsideViewController.flipsideViewControllerString = @"Flip Side View Controller String";
     }
 }
 

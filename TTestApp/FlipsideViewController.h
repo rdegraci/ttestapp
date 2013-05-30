@@ -17,7 +17,8 @@
 @interface FlipsideViewController : UIViewController
 
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
-
+@property (strong, nonatomic) IBOutlet UILabel *labelThree;
+@property (strong, nonatomic) NSString* flipsideViewControllerString;
 - (IBAction)done:(id)sender;
 
 @end
