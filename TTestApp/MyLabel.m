@@ -28,4 +28,7 @@
 }
 */
 
+- (void)colorToRed {
+    self.textColor = [UIColor redColor];
+}
 @end

@@ -10,4 +10,6 @@
 
 @interface MyLabel : UILabel
 
+- (void)colorToRed;
+
 @end

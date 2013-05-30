@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "AppDelegate.h"
 #import "FlipsideViewController.h"
+#import "MyLabel.h"
 
 @interface MainViewController ()
 
@@ -24,7 +25,7 @@
     self.mainViewControllerString = @"This is the main View Controller String";
     
     AppDelegate* appDelegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    [self.labelOne setTextColor:[UIColor redColor]];
+    [self.labelOne colorToRed];
     [self.labelOne setText:appDelegate.appDelegateString];
     
     self.labelTwo.textColor = [UIColor yellowColor];

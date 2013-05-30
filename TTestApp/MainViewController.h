@@ -8,13 +8,15 @@
 
 #import "FlipsideViewController.h"
 
+@class MyLabel;
+
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate, UIPopoverControllerDelegate>
 
 @property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
 
 @property (strong, nonatomic) NSString* mainViewControllerString;
 
-@property (strong, nonatomic) IBOutlet UILabel *labelOne;
+@property (strong, nonatomic) IBOutlet MyLabel *labelOne;
 @property (strong, nonatomic) IBOutlet UILabel *labelTwo;
 
 @end
